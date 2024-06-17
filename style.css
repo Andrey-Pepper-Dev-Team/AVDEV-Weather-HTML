@@ -1,0 +1,247 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  transition: background-color 0.5s ease;
+  color: #333;
+}
+
+.container {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 800px;
+  width: 50%;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.sunrise-sunset {
+    margin-top: 20px;
+}
+
+/* ... (Previous CSS from previous response) */
+
+.unit-toggle {
+    margin-top: 20px;
+}
+
+#toggle-unit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#toggle-unit-button:hover {
+    background-color: #45a049;
+}
+#search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 80%;
+  margin-right: 10px;
+}
+
+#search-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+  background-color: #45a049;
+}
+
+.weather-info {
+  margin-bottom: 20px;
+}
+
+#city {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.current-weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#weather-icon {
+  font-size: 6em;
+  margin-right: 20px;
+}
+
+.temp {
+  font-size: 4em;
+}
+
+#description {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.additional-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.additional-info div {
+  text-align: left;
+  width: 45%;
+}
+
+.forecast {
+  margin-bottom: 20px;
+}
+
+.forecast-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.forecast-day {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 130px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.forecast-day .day {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.forecast-day .icon {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.forecast-day .temp {
+  font-size: 1.2em;
+}
+
+.mode-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.mode-toggle label {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.mode-toggle input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.theme-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: background-color 0.3s ease;
+}
+
+.mode-toggle input[type="checkbox"]:checked+.theme-slider {
+  background-color: #4CAF50;
+}
+
+.theme-slider::before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.mode-toggle input[type="checkbox"]:checked+.theme-slider::before {
+  transform: translateX(26px);
+}
+
+/* Night Mode */
+body.night-mode {
+  background-color: #181818;
+  color: #fff;
+}
+
+.container {
+  background-color: #282828;
+  color: #fff;
+}
+
+#search-button {
+  background-color: #007bff;
+}
+
+#search-button:hover {
+  background-color: #0062cc;
+  height: 44px
+}
+
+.forecast-day {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .additional-info {
+    flex-direction: column;
+  }
+
+  .additional-info div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
