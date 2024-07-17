@@ -1,4 +1,4 @@
-const apiKey = '8da531ab7b66b86e8bc4f769deb25e52'; // Replace with your OpenWeather API key //Если заходите создать свой сайт погоды. То Вставте свой API ключ const apiKey = 'Свой API ключ OpenWeatherMap'; Получить можно тут: https://https://home.openweathermap.org/api_keys
+const apiKey = '8da531ab7b66b86e8bc4f769deb25e52'; // Replace with your OpenWeather API key //Если заходите создать свой сайт погоды. То Вставте свой API ключ const apiKey = 'Свой API ключ OpenWeatherMap'; Получить можно тут: https://home.openweathermap.org/api_keys
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?';
 const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?';
 const cityElement = document.getElementById('city');
